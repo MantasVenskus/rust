@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	background: @background;
+	font: @fontSize/1 @ff; 
+	color:@color;
+	position: relative;
+	z-index: 1;
+}
+
+a {
+	color:@link;
+	text-decoration: none;
+}
+a:hover {
+	color : @linkHover;
+	text-decoration: underline;
+}
+
+strong, b, .b {
+	font-weight: bold;
+}
+
+em, .i {
+	font-style: italic;
+}
+
+button, .btn, .button {
+ cursor: pointer;
+}
+
+.container {
+	max-width: @width;
+	margin: 0 auto;
+	position: relative;
+	z-index: 3;
+	padding: 0 10px;
+}
+
+.clearfix{
+	clear: both;
+	height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
